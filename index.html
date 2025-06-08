@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
     <link rel="stylesheet" href="style.css">
     <script src="./main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,14 +13,14 @@
     <title>W. Notícias</title>
 </head>
 <body>
-    <header class="header-mobile">
-        <img src="./assets/images/logo.svg" alt="Logo do site de notícias W.">
+    <header>
+        <img src="./assets/images/logo.svg" alt="Logo do site de notícias">
 
         <button>
-            <img src="./assets/images/icon-menu.svg" alt="ícone do meu hamburguer">
+            <img src="./assets/images/icon-menu.svg" alt="ícone do menu hamburguer">
         </button>
 
-        <nav>
+        <nav class="mobile">
             <button>
                 <img src="./assets/images/icon-menu-close.svg" alt="ícone de X para fechar o menu">
             </button>
@@ -29,11 +31,23 @@
             <a href="#">Trending</a>
             <a href="#">Categorias</a>
         </nav>
-    </header>
 
+        <nav class="desktop">
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+        </nav>
+    </header>
+    
     <main>
         <section class="primeira-secao">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="icone do puzzle colorido">
+            <picture>
+                <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="icone do puzzle colorido">
+            </picture>
+
             <h1>O futuro brilhante da Web 3.0?</h1>
             <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
             <button>Ler mais</button>
